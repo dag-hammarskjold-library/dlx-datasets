@@ -27,7 +27,7 @@ setup(
     entry_points = {
         # see https://python-packaging.readthedocs.io/en/latest/command-line-scripts.html#the-console-scripts-entry-point
         'console_scripts': [
-            'run-script=package.scripts.script:run' # rename the command and the path to the function
+            'eth-extract=dlx_datasets.scripts.eth_extract:run' # rename the command and the path to the function
         ]
     }
 )
