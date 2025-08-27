@@ -1,8 +1,21 @@
-# python-package-template
-Template for creating Python packages. 
+# DLX-Datasets
+This is a package for of modules (usually in the form of srcipts) for generating reports and datasets from the DLX data (the database of the library catalague).
 
-This template provides a skeleton directory structure for creating a [Python package](https://docs.python.org/3/tutorial/modules.html#packages). Python packages are collections of one or more [Python modules](https://docs.python.org/3/tutorial/modules.html). The package is configured in the file `setup.py`.
+### Installation
+Install this package into an active Python virtual environment using Pip:
 
-Packages are meant to be installed into a Python environent uisng [`pip`](https://pypi.org/project/pip/). These packages can be installed directly from the GitHub source code, i.e. `pip install git+<repository URL>`
+`pip install dlx-datasets @ git+https://github.com/dag-hammarskjold-library/dlx-datasets@v1.0`
 
-Once the package is installed, the modules in the package can be imported into another Python file using [`import`](https://docs.python.org/3/reference/import.html). Modules can also be command-line applications or scripts. 
+For developing against this repo, clone the repo, navigate to the root of the directory, and install it from the local source code in the virtual environment:
+
+`pip install .`
+
+### Scripts
+
+#### eth-extract
+Creates a custom dataset based on specified criteria and extracted data and writes it to JSON file.
+
+##### Usage:
+Fom the command line:
+
+`eth-extract --help`
